@@ -4,4 +4,12 @@ $(document).ready(function() {
     event.preventDefault();
     $(this).hide('slow');
   });
+  $('.plus').on('click', () => {
+    let $num = parseInt($('.num').text());
+    $('.num').text($num + 1);
+  });
+  $('.minus').on('click', () => {
+    let $num = parseInt($('.num').text());
+    $('.num').text($num - 1);
+  });
 });
